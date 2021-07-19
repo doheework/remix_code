@@ -4,6 +4,10 @@ let sliderG;
 let sliderB;
 let mic, recorder, soundFile;
 let input;
+let mainfont;
+let style1;
+let style2;
+let style3;
 var vid;
 var fft;
 var w;
@@ -31,6 +35,12 @@ function preload() {
   song4 = loadSound("sample4.m4a", loaded);
   songS8 = loadSound("8_outro.mp3", loaded);
 
+
+  style3= loadFont("ZenDots-Regular.ttf");
+  style2=loadFont("Oi-Regular.ttf");
+  style1=loadFont("NovaSquare-Regular.ttf");
+  mainfont=loadFont("PermanentMarker-Regular.ttf");
+ 
 }
 
 function loaded() {
@@ -50,7 +60,7 @@ function setup() {
   
   //text
   textSize(240);
-  textFont("Permanent Marker");
+  textFont(mainfont);
   text("Make",10,340);
   textSize(300);
   text("your",50,640);
@@ -385,18 +395,17 @@ function Album() {
 
 function Style1() {
   const album = inputAlbum.value();
-  textSize(120);
-  textFont("Nova Square");
+  textSize(140);
+  textFont(style1);
   textAlign(LEFT);
-  text(album, 643, 150,370,370);
-  Style2.hide();
+  text(album, 650,150, 402,402);
 }
 
 function Style2() {
   textAlign(CENTER);
   const album = inputAlbum.value();
   textSize(80);
-  textFont("Zen Dots");
+  textFont(style3);
   text(album, 660,300,402,150);
 }
 
@@ -404,7 +413,7 @@ function Style3() {
   textAlign(LEFT);
   const album = inputAlbum.value();
   textSize(60);
-  textFont("Oi");
+  textFont(style2);
   text(album,635,150, 402,402);
   text(album,635,320, 402,402);
 
