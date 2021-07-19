@@ -441,21 +441,25 @@ function togglePlaying6() {
   //layout
   textFont("courier");
   fill(0);
+  
   textSize(30);
-  text("List", 1210, 160);
+  textStyle(BOLD);
+  text("List", 1220, 150);
   strokeWeight(2);
   stroke(0);
   line(1200, 170, windowWidth - 100, 170);
   
   //text
+  noStroke();
+  textStyle(NORMAL);
    textSize(18);
   text("If you want to get your album, plese follow the instruction below" , 100, 100,300);
   text("1. Screenshot(command⌘ + shift ⇧ + 3) this page",100 , 200, 300); 
   text("2. Write down your email, a name of soundfile and time on the sheet",100 , 270,300); 
-  textSize(22);
+  textSize(14);
   fill(255,0,0);
-  text("For the next player, please refresh the website." , 1210,630,400);
-  text("If you are the new and see this sentence, refresh the site" , 1210,700,400);
+  text("For the next player, please refresh the website.If you are the new and see this sentence, refresh the site as well" , 1240,630,390);
+  
   
   //smaple 1
   fill(0);
@@ -464,9 +468,9 @@ function togglePlaying6() {
   buttonS1.position(1520, 210)
   buttonS1.size(50, 30);
   textSize(30);
-  text("City Pop", 1210, 220);
+  text("City Pop", 1230, 220);
   textSize(15);
-  text("Prod. by ogjjang", 1220, 250);
+  text("Prod. by ogjjang", 1230, 250);
 
   //sample2
   buttonS2 = createButton("▶");
@@ -474,9 +478,9 @@ function togglePlaying6() {
   buttonS2.position(1520, 310)
   buttonS2.size(50, 30);
   textSize(30);
-  text("Snitch", 1210, 320);
+  text("Snitch", 1230, 320);
   textSize(15);
-  text("Prod. by Pr!d3", 1220, 350);
+  text("Prod. by Pr!d3", 1230, 350);
 
   //sample3
   buttonS3 = createButton("▶");
@@ -484,9 +488,9 @@ function togglePlaying6() {
   buttonS3.position(1520, 410)
   buttonS3.size(50, 30);
   textSize(30);
-  text("Trip", 1210, 420);
+  text("Trip", 1230, 420);
   textSize(15);
-  text("Prod. by TYRAN Beats.", 1220, 450);
+  text("Prod. by TYRAN Beats.", 1230, 450);
 
 
   //sample4
@@ -495,9 +499,9 @@ function togglePlaying6() {
   buttonS4.position(1520, 510)
   buttonS4.size(50, 30);
   textSize(30);
-  text("Amusement", 1210, 520);
+  text("Amusement", 1230, 520);
   textSize(15);
-  text("Prod. by plantplantworld", 1220, 550);
+  text("Prod. by plantplantworld", 1230, 550);
 }
 
 function togglePlayingS1() {
